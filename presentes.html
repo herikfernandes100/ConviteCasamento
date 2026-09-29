@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagem.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/imagem.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Convite de Casamento</title>
 </head>
@@ -11,86 +11,93 @@
     <nav class="menu">
         <a href="index.html">Home</a>
         <a href="casal.html">O casal</a>
-        <a href="cerimonia.html">Cerimônia e Recepção<a>
+        <a href="cerimonia.html">Cerimônia e Recepção</a>
         <a href="presentes.html">Lista de Presentes</a>
         <a href="confirmacao.html">Confirmação</a>
         <a href="recados.html">Recados</a>
         <a href="login.html">Login</a>
     </nav>
 
-    <main>
-        <section>
-            <button>Adicionar ao carrinho</button>
+    <main class="presentes-main">
+        <h1>Lista de presentes</h1>
+        <p class="presentes">
+            COM CARINHO, PARA NOSSA NOVA CASA<br>
+            Escolha um presente para celebrar esse novo capítulo com a gente
+        <p>
+        
 
-            <div>
-                <div>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/6b/00/ba/br-ceu3-nossa-mais-nova.jpg?w=500&h=500&s=1" alt="imagem do item"/>
+        <div class="loja-layout">
+            <section class="catalogo" aria-label="Produtos disponíveis">
+                <article>
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/6b/00/ba/br-ceu3-nossa-mais-nova.jpg?w=500&h=500&s=1" alt="Passeio de balão" loading="lazy">
+                    <div class="produto-info">
+                        <h2>Passeio de balão</h2>
+                        <h3>R$ 789,90</h3>
+                        <button class="botao-adicionar" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grxh0rccf19c/b/achapromo-files/o/achapromo/products/mercadolivre/D_Q_NP_2X_676641-MLA111963988274_062026-E.webp" alt="Adega de vinhos" loading="lazy">
+                    <div class="produto-info">
+                        <h2>Adega de vinhos</h2>
+                        <h3>R$ 659,90</h3>
+                        <button class="botao-adicionar" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMyiUs1IuxbKMT8ODqJwE3TSk3D0Zdt9jbR1dld84DxZ8dE595rEkWTgy_&s=10" alt="Jogo de panelas de cerâmica" loading="lazy">
+                    <div class="produto-info">
+                        <h2>Jogo de panelas de cerâmica</h2>
+                        <h3>R$ 789,90</h3>
+                        <button class="botao-adicionar" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFwFEPs278NDLz-ijKRr3r4-8_klx-oyO56wclzR-QvHbTEsKy8FADClg&s=10" alt="Churrasqueira" loading="lazy">
+                    <div class="produto-info">
+                        <h2>Churrasqueira</h2>
+                        <h3>R$ 254,90</h3>
+                        <button class="botao-adicionar" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_993546-MLA112255601802_062026-O.webp" alt="Pipoqueira de 10 litros" loading="lazy">
+                    <div class="produto-info">
+                        <h2>Pipoqueira 10 litros</h2>
+                        <h3>R$ 159,90</h3>
+                        <button class="botao-adicionar" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://finezzadecor.com/cdn/shop/files/4_9e61f2df-d9dd-4c98-aa0c-d1fae6991c78.png?v=1747852982&width=500" alt="Kit aparelho de jantar" loading="lazy">
+                    <div class="produto-info">
+                        <h2>Kit aparelho de jantar</h2>
+                        <h3>R$ 399,90</h3>
+                        <button class="botao-adicionar" type="button">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+            </section>
+
+            <aside class="carrinho" aria-labelledby="carrinho-titulo">
+                <div class="carrinho-cabecalho">
+                    <h2 id="carrinho-titulo">Seu carrinho</h2>
+                    <span class="carrinho-contador" id="carrinho-contador" aria-label="0 itens">0</span>
                 </div>
-
-                <p>Passeio de balão</p>
-                <p>R$789,90</p>
-
-                <button>Presentear</button>
-            </div>
-
-             <div>
-                <div>
-                    <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grxh0rccf19c/b/achapromo-files/o/achapromo/products/mercadolivre/D_Q_NP_2X_676641-MLA111963988274_062026-E.webp" alt="imagem do item"/>
+                <p class="carrinho-vazio" id="carrinho-vazio">Seu carrinho está vazio.</p>
+                <ul class="carrinho-itens" id="carrinho-itens" aria-live="polite"></ul>
+                <div class="carrinho-total">
+                    <span>Total</span>
+                    <strong id="carrinho-total">R$ 0,00</strong>
                 </div>
-
-                <p>Adega de vinhos</p>
-                <p>R$659,90</p>
-
-                <button>Presentear</button>
-            </div>
-
-
-             <div>
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMyiUs1IuxbKMT8ODqJwE3TSk3D0Zdt9jbR1dld84DxZ8dE595rEkWTgy_&s=10" alt="imagem do item"/>
-                </div>
-
-                <p>Jogo panelas de cerâmica</p>
-                <p>R$789,90</p>
-
-                <button>Presentear</button>
-            </div>
-
-
-             <div>
-                <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFwFEPs278NDLz-ijKRr3r4-8_klx-oyO56wclzR-QvHbTEsKy8FADClg&s=10" alt="imagem do item"/>
-                </div>
-
-                <p>Churrasqueira</p>
-                <p>R$254,90</p>
-
-                <button>Presentear</button>
-            </div>
-
-             <div>
-                <div>
-                    <img src="https://http2.mlstatic.com/D_NQ_NP_993546-MLA112255601802_062026-O.webp" alt="imagem do item"/>
-                </div>
-
-                <p>Pipoqueira 10l</p>
-                <p>R$159,90</p>
-
-                <button>Presentear</button>
-            </div>
-
-
-             <div>
-                <div>
-                    <img src="https://finezzadecor.com/cdn/shop/files/4_9e61f2df-d9dd-4c98-aa0c-d1fae6991c78.png?v=1747852982&width=500" alt="imagem do item"/>
-                </div>
-
-                <p>Kit aparelho de jantar</p>
-                <p>R$399,90</p>
-
-                <button>Presentear</button>
-            </div>
-        </section>
+                <button class="botao-presentear" id="botao-presentear" type="button" disabled>Presentear</button>
+            </aside>
+        </div>
     </main>
+
 </body>
 </html>
