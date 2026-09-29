@@ -1,39 +1,5 @@
-.menu{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 15px;
-}
-
-.menu a {
-    font-family: "Segoe UI", sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    color: black;
-    text-decoration: none;
-}
-.menu a:hover {
-    color: gray;
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
 body {
     font-family: "Segoe UI", sans-serif; background-color: #fdfbf9; color: #555; 
-}
-
-.menu {
-    display: flex; justify-content: center; gap: 30px; padding: 25px; background-color: #fff; border-bottom: 1px solid #eee;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #555;
-    font-size: 15px;
-}
-
-.menu a:hover {
-    color: #9b7b6d;
 }
 
 main {
@@ -43,12 +9,40 @@ main {
     padding: 20px;
 }
 
+.menu{
+    background-color: #fff;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+}
+
+.menu a {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: gray;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main img {
     width: 100%;
     max-width: 750px;
     height: 400px;
     object-fit: cover;
+    border-radius: 15px;
 }
+
 
 h1 {
     margin-top: 35px;
