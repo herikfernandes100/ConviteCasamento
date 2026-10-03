@@ -18,32 +18,34 @@
         <a href="login.html">Login</a>
     </nav>
 
-    <main>
-        <section>
+    <main class="recados">
+        <section class="recados-card">
             <h1>Deixe um recado para os noivos!</h1>
 
-            <form>
-                <label for="nome">Digite seu nome:</label>
-                <input type="text" id="nome" name="nome">
+            <form class="recados-form">
+                <div class="campo">
+                    <label for="nome">Digite seu nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+                </div>
 
-                <label for="recado">Recado</label>
-                <input type="text" id="recado" name="recado" >
+                <div class="campo">
+                    <label for="recado">Recado</label>
+                    <textarea id="recado" name="recado" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+                </div>
 
                 <button type="submit">Enviar recado</button>
             </form>
 
-
-            <section>
-                <div>
+            <section class="lista-recados">
+                <article class="recado-item">
                     <h4>Isabela Vitoria</h4>
-                    <p>Parabéns pela linda história que escreveram juntos. Que continuem essa história com muito, amor, dedicação, paciência, muita alegria e a partir do dia 15 de agosto, com as bênçãos de Deus. Felicidades ao jovem casal e muita alegria durante esse novo ciclo.</p>
-                </div>
+                    <p>Parabéns pela linda história que escreveram juntos. Que continuem essa história com muito amor, dedicação, paciência, muita alegria e, a partir do dia 15 de agosto, com as bênçãos de Deus. Felicidades ao jovem casal e muita alegria durante esse novo ciclo.</p>
+                </article>
 
-                <div>
+                <article class="recado-item">
                     <h4>Herik Fernandes</h4>
-                    <p>Desejamos que nesse novo ciclo de vida como casal, o amor de vocês continue sendo abrigo, parceria e escolha diária.
-                    Que vocês nunca deixem faltar o respeito nos dias difíceis, a leveza nos dias comuns e motivos para celebrar todos os dias da vida.</p>
-                </div>
+                    <p>Desejamos que nesse novo ciclo de vida como casal, o amor de vocês continue sendo abrigo, parceria e escolha diária. Que vocês nunca deixem faltar o respeito nos dias difíceis, a leveza nos dias comuns e motivos para celebrar todos os dias da vida.</p>
+                </article>
             </section>
         </section>
     </main>
