@@ -267,6 +267,75 @@ p {
     line-height: 1.7;
 }
 
+/* Tela de login */
+.login {
+    max-width: 520px;
+}
+
+.login-card {
+    padding: 32px 28px;
+    border: 1px solid #eee3df;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 14px 30px rgb(92 74 67 / 8%);
+}
+
+.login-card h2 {
+    margin: 0 0 24px;
+    font-size: 28px;
+    color: #5c4a43;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.login-form .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-form label {
+    color: #5c4a43;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-form input {
+    width: 100%;
+    min-height: 52px;
+    border: 1px solid #e5d9d4;
+    border-radius: 12px;
+    background: #fffdfc;
+    color: #5c4a43;
+    font: inherit;
+    padding: 0 16px;
+    outline: none;
+}
+
+.login-form input:focus {
+    border-color: #b69284;
+    box-shadow: 0 0 0 3px rgb(182 146 132 / 12%);
+}
+
+.login-form button {
+    min-height: 50px;
+    border: 0;
+    border-radius: 12px;
+    background: #70564c;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.login-form button:hover {
+    background: #59433a;
+}
     text-align: center;
 }
 
