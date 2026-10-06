@@ -75,12 +75,17 @@ p {
     font-family: "Segoe UI", sans-serif;
     font-size: 15px;
     font-weight: 500;
-    color: black;
+    color: #70564c;
     text-decoration: none;
 }
 
 .menu a:hover {
     color: gray;
+}
+
+.menu a#ativo {
+    color: black;
+    font-weight: 700;
 }
 
 /* Tela de confirmação */
@@ -620,4 +625,3 @@ article img {
         height: 220px;
     }
 }
-
