@@ -67,8 +67,34 @@ p {
     border-bottom: 1px solid lightgrey;
     display: flex;
     justify-content: center;
-    gap: 30px;
     padding: 25px;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #d8cec9;
+    border-radius: 10px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background: #70564c;
 }
 
 .menu a {
@@ -86,6 +112,45 @@ p {
 .menu a#ativo {
     color: black;
     font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        justify-content: end;
+        align-items: center;
+        padding: 12px 20px;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    .menu-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0;
+        padding: 12px 20px 16px;
+        border-bottom: 1px solid lightgrey;
+        background: #fff;
+        box-shadow: 0 12px 20px rgb(0 0 0 / 6%);
+        z-index: 30;
+    }
+
+    .menu.menu-aberto .menu-links {
+        display: flex;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
 }
 
 /* Tela de confirmação */

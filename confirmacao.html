@@ -9,13 +9,20 @@
 </head>
 <body>
     <nav class="menu">
-        <a href="index.html">Home</a>
-        <a href="casal.html">O casal</a>
-        <a href="cerimonia.html">Cerimônia e Recepção</a>
-        <a href="presentes.html">Lista de Presentes</a>
-        <a id="ativo" href="confirmacao.html">Confirmação</a>
-        <a href="recados.html">Recados</a>
-        <a href="login.html">Login</a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="menu-links" id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="casal.html">O casal</a>
+            <a href="cerimonia.html">Cerimônia e Recepção</a>
+            <a href="presentes.html">Lista de Presentes</a>
+            <a id="ativo" href="confirmacao.html">Confirmação</a>
+            <a href="recados.html">Recados</a>
+            <a href="login.html">Login</a>
+        </div>
     </nav>
 
     <main class="confirmacao">
@@ -36,5 +43,6 @@
             </div>
         </section>
     </main>
+    <script src="menu.js" defer></script>
 </body>
 </html>
